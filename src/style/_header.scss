@@ -1,0 +1,48 @@
+.header{
+  margin: 0 auto;
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 1360px;
+    display: flex;
+    padding:25px 0 ;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: flex;
+    gap: 12px;
+    height: 40px;
+    max-width: 196px;
+  }
+  &__name{
+    font-size: 20.283px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__contacts{
+    padding-top: 10px;
+  }
+}
+.contacts{
+  &__list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__items{
+    display: flex;
+    gap: 11.1px;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__link{
+    color: #0A2B49;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
