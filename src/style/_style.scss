@@ -39,8 +39,29 @@ body {
   line-height: 1;
   color: #0A2B49;
   background: #fff;
+  margin: 0 auto;
 }
 .wrapper{
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
+}
+.main__wrapper{
+  margin:0 auto;
+}
+.container__color{
+  max-width: 1890px;
+  border-radius: 25px;
+  background: #F0F0F0;
+  margin:0 auto;
+}
+.btn{
+  border-radius: 10px;
+  background: #C8231C;
+  width: 216px;
+  height: 55px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
