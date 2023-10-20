@@ -1,0 +1,63 @@
+.questions{
+  &__container{
+    margin-top: 160px;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: row;
+    gap:174px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__text{
+    margin-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 99px;
+  }
+  &__subtitle{
+    margin-top: 22px;
+  }
+  &__form{
+    margin-top: 42px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 673px;
+    align-items: center;
+  }
+  input{
+    width: 329px;
+    height: 55px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 18px 25px;
+  }
+  textarea{
+    width: 673px;
+    resize: none;
+    height: 180px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 18px 25px;
+  }
+  &__btn{
+    border-radius: 10px;
+    background: #C8231C;
+    width: 329px;
+    height: 55px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__agreement{
+    max-width: 329px;
+    color: rgba(10, 43, 73, 0.45);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__img{
+    width: 522px;
+    height: 575px;
+  }
+}

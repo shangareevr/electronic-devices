@@ -2,9 +2,9 @@
   margin: 0 auto;
   &__wrapper{
     margin: 0 auto;
-    max-width: 1360px;
+    max-width: 1390px;
     display: flex;
-    padding:25px 0 ;
+    padding:25px 15px;
     justify-content: space-between;
   }
   &__logo{
@@ -13,13 +13,19 @@
     height: 40px;
     max-width: 196px;
   }
+  &__contacts{
+    padding-top: 10px;
+  }
+}
+.logo{
   &__name{
     font-size: 20.283px;
     line-height: 20px;
     text-transform: uppercase;
   }
-  &__contacts{
-    padding-top: 10px;
+  &__img{
+    width: 40px;
+    height: 40px;
   }
 }
 .contacts{
@@ -33,10 +39,25 @@
   }
   &__items{
     display: flex;
-    gap: 11.1px;
+    gap: 11px;
+    &:nth-last-child(1){
+      padding-right: 2px;
+    }
+    &:nth-child(-n+2){
+      @media(max-width:900px){
+        display: none;
+      }
+    }
+    @media(max-width:420px){
+      gap: 10px;
+    }
     img{
       width: 20px;
       height: 20px;
+      @media(max-width:420px){
+        width: 16px;
+        height: 16px;
+      }
     }
   }
   &__link{
@@ -44,5 +65,9 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
+    @media(max-width:420px){
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

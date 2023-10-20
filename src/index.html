@@ -10,14 +10,14 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
-          <img src="./img/logo/logo.svg" alt="Логотип" class="header__img">
-          <div class="header__name">Электронные приборы</div>
+          <img src="./img/logo/logo.svg" alt="Логотип" class="logo__img">
+          <div class="logo__name">Электронные приборы</div>
         </div>
         <div class="header__contacts">
           <div class="contacts__list">
             <div class="contacts__items">
               <img src="./img/icon/location.svg" alt="location" class="location__img">
-              <a href="https://yandex.ru/maps/-/CDajQCLh" target="_blank" class="contacts__link">г. Уфа, пр-кт Октября, д. 114/3</a>
+              <p class="contacts__link">г. Уфа, пр-кт Октября, д. 114/3</p>
             </div>
             <div class="contacts__items">
               <img src="./img/icon/e-mail.svg" alt="e-mail" class="email__img">
@@ -25,7 +25,7 @@
             </div>
             <div class="contacts__items">
               <img src="./img/icon/tel.svg" alt="telephone" class="tel__img">
-              <a href="tel:++79277933333" class="contacts__link">+7 (927) 793-33-33</a>
+              <a href="tel:+79277933333" class="contacts__link">+7 (927) 793-33-33</a>
             </div>
           </div>          
         </div>
@@ -34,29 +34,422 @@
     <main class="main">
       <div class="main__wrapper">
         <section class="info" id="info">
-          <div class="info__container container__color">
-            <h1 class="info__title">Поставка электронного оборудования <br> <span>из Европы, Азии и США</span></h1>
-            <div class="info__subtitle">Оказываем услуги параллельного импорта</div>
-            <div class="info__buttons">
-              <button class="info__button btn">оставить заявку</button>
-              <div class="info__block"><img src="./img/icon/checkmark.svg" alt="checkmark" class="checkmark"> <span>Соблюдаем законодательство РФ</span> </div>
+          <div class="info__container section section__color">
+            <div class="info__text">
+              <h1 class="info__title">Поставка электронного оборудования <br> <span>из Европы, Азии и США</span></h1>
+              <div class="info__subtitle">Оказываем услуги параллельного импорта</div>
+              <div class="info__buttons">
+                <button class="info__btn btn">оставить заявку</button>
+                <div class="info__block"><img src="./img/icon/checkmark.svg" alt="checkmark" class="checkmark"> <span>Соблюдаем законодательство РФ</span> </div>
+              </div>
+            </div>
+            <nav class="main__nav">
+              <ul class="nav__list">
+                <li class="nav__items"><a href="#about" class="nav__link">О компании</a></li>
+                <li class="nav__items"><a href="#skills" class="nav__link">Преимущества</a></li>
+                <li class="nav__items"><a href="#brends" class="nav__link">Бренды</a></li>
+                <li class="nav__items"><a href="#equipment" class="nav__link">Продукция</a></li>
+                <li class="nav__items"><a href="#working" class="nav__link">Как мы работаем</a></li>
+                <li class="nav__items"><a href="#review" class="nav__link">Кейсы</a></li>
+                <li class="nav__items"><a href="#contact" class="nav__link">Контакты</a></li>
+              </ul>
+              <button class="nav__btn btn">Заказать звонок</button>
+            </nav>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="skills__container section"  id="skills">
+            <div class="skills__info">
+              <h2 class="skills__title section__title">Ключевые преимущества</h2>
+              <div class="skills__subtitle section__subtitle">Мы работаем с ведущими иностранными поставщиками, что позволяет нам устанавливать глобальные партнерства</div>
+              <div class="skills__nav">
+                <button class="slider-skills__prev slider__btn">&#60;</button>
+                <button class="slider-skills__next slider__btn">&#62;</button>
+              </div>
+            </div>
+            <div class="slider-skills">
+              <div class="slider-skills__wrapper">
+                <div class="slider-skills__elem">
+                  <img src="./img/slider/garant.png" alt="Экономия" class="slider-skills__img">
+                  <div class="slider-skills__text">
+                    <div class="slider-skills__title"><span>Гарантия на изделия</span> <img src="./img/icon/garant-icon.svg" alt="Качество"></div>
+                    <div class="slider-skills__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                  </div>
+                </div>
+                <div class="slider-skills__elem">
+                  <img src="./img/slider/econom.png" alt="Экономия" class="slider-skills__img">
+                  <div class="slider-skills__text">
+                    <div class="slider-skills__title"><span>Экономия</span> <img src="./img/icon/econom.svg" alt="Копилка"></div>
+                    <div class="slider-skills__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <nav class="main__nav">
-            <ul class="nav__list">
-              <li class="nav__items"><a href="#nav" class="nav__link">О компании</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Преимущества</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Бренды</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Продукция</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Как мы работаем</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Кейсы</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Контакты</a></li>
-            </ul>
-            <button class="nav__btn btn">Заказать звонок</button>
-          </nav>
+        </section>
+        <section class="equipment" >
+          <div class="equipment__container section" id="equipment">
+            <h2 class="equipment__title section__title">Оборудование</h2>
+            <div class="equipment__list">
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items">
+                <div class="equipment-elem__title">Волоконные лазеры</div>
+                <div class="equipment-elem__subtitle"><img src="./img/icon/equipment/icon01.svg" alt=""> <span>Лазерное</span></div>
+                <img src="./img/equipment/img_01.png" alt="" class="equipment-elem__img">
+                <button class="equipment-elem__btn"> Оставить заявку</button>
+              </div>
+              <div class="equipment__items equipment__list-selection">
+                  <div class="selection__title">Подберем любое оборудование <br> по вашему запросу</div>
+                  <img src="./img/equipment/img_15.png" alt="" class="selection__img">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="call">
+          <div class="call__container section section__color" id="call">
+            <div class="call__info">
+              <h2 class="call__title section__title">Нужна консультация? <span>Закажите звонок!</span></h2>
+              <div class="call__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
+              <form class="call__form" action="#">
+                <input type="text" class="call__name" placeholder="Ваше имя">
+                <input type="number" class="call__number" placeholder="+7 (999)-999-99-99">
+                <button class="call__btn" type="submit">оставить заявку</button>
+                <p class="call__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</p>
+              </form>
+            </div>
+            <!-- Вставить изображение -->
+          </div>
+        </section>
+        <section class="working" >
+          <div class="working__container" id="working">
+            <h2 class="working__title section__title">Как мы работаем</h2>
+            <div class="working__list">
+              <div class="working__ellipse working__ellipse_first">
+                <div class="working__ellipse-center">
+                  <div class="ellipse__title">Заявка<sup>01</sup></div>
+                <div class="ellipse__text">Выберите товар и оставьте заявку на нашем сайте или по телефону: 8 (917) 340-02-21</div>
+                </div>
+                <div class="point__blue"></div>
+                <div class="point__red"></div>
+              </div>
+              <div class="working__ellipse working__ellipse_second">
+                <div class="working__ellipse-center">
+                  <div class="ellipse__title">Согласование<sup>02</sup></div>
+                  <div class="ellipse__text">Мы определим сроки доставки и вышлем вам коммерческое предложение</div>
+                </div>
+                <div class="point__blue"></div>
+                <div class="point__red"></div>
+              </div>
+              <div class="working__ellipse working__ellipse_three">
+                <div class="working__ellipse-center">
+                  <div class="ellipse__title">Оплата<sup>03</sup></div>
+                  <div class="ellipse__text">Вы производите оплату, мы организуем логистику от страны-поставщика</div>
+                </div>
+                <div class="point__blue"></div>
+                <div class="point__red"></div>
+              </div>
+              <div class="working__ellipse working__ellipse_four">
+                <div class="working__ellipse-center">
+                  <div class="ellipse__title">Доставка<sup>04</sup></div>
+                  <div class="ellipse__text">При необходимости проводим растаможку груза в России <br> и доставляем товар к вам на склад</div>
+                </div>
+                <div class="point__blue"></div>
+                <div class="point__red"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="brends">
+          <div class="brends__container section" id="brends">
+            <h2 class="brends__title section__title">Бренды с которыми мы работаем</h2>
+            <div class="tabs__wrapper">
+              <div class="tabs">
+                <span class="tab active">Америка</span>
+                <span class="tab">Япония</span>
+                <span class="tab">швейцария</span>
+                <span class="tab">канада</span>
+                <span class="tab">китай</span>
+                <span class="tab">франция</span>
+                <span class="tab">англия</span>
+                <span class="tab">южная корея</span>
+                <span class="tab">тайвань</span>
+                <span class="tab">италия</span>
+              </div>
+              <div class="tabs__content">
+                <div class="tab-items">
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+
+                </div>
+              </div>
+              <button class="tab__open btn">смотреть все</button>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container section section__color" id="about">
+            <div class="about__content">
+              <h2 class="about__title section__title">О компании «Электронные приборы»</h2>
+              <div class="about__text">Постоянно исследуем новейшие технологии и инновации, чтобы оставаться на передовом рубеже. Мы предлагаем нашим клиентам гибкие и индивидуальные решения, отвечающие их потребностям.</div>
+              <div class="about__subtitle section__subtitle">
+                <p>С другой стороны постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+                <p>Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+              </div>
+              <div class="about__quantity">
+                <div class="quantity__items"><span>250+</span>Клиентов</div>
+                <div class="quantity__items"><span>500+</span>Оборудования в каталоге</div>
+                <div class="quantity__items"><span>5+</span>Лет работы</div>
+                <div class="quantity__items"><span>7</span>Стран для импорта</div>
+              </div>
+            </div>
+            <div class="about__img">
+            </div>
+          </div>
+        </section>
+        <section class="review">
+          <div class="review__container section" id="review">
+            <div class="review__top">
+              <h2 class="review__title section__title">Отзывы о нашей работе</h2>
+              <div class="review__nav">
+                <button class="review__prev slider__btn">&#60;</button>
+                <button class="review__next slider__btn">&#62;</button>
+              </div>
+            </div>
+            <div class="slider-review">
+              <div class="slider-review__wrapper">
+                <div class="slider-review__elem">
+                  <img src="./img/about/first.png" alt="Экономия" class="slider-review__img">
+                  <div class="slider-review__text">
+                    <div class="slider-review__title">Петров Александр</div>
+                    <div class="slider-review__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                    <div class="slider-review__date"><img src="./img/icon/calendar.svg" alt="Календарь">21.04.2022</div>
+                  </div>
+                </div>
+                <div class="slider-review__elem">
+                  <img src="./img/about/second.png" alt="Экономия" class="slider-review__img">
+                  <div class="slider-review__text">
+                    <div class="slider-review__title">Иванов Владимир</div>
+                    <div class="slider-review__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                    <div class="slider-review__date"><img src="./img/icon/calendar.svg" alt="Календарь">21.04.2022</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__container section" id="contact">
+            <h2 class="contact__title section__title">Контакты</h2>
+            <div class="contact__list">
+              <div class="contact__items">
+                <div class="contact__name">Телефон:</div>
+                <a href="tel:+79277933333" class="contact__info">
+                  <img src="./img/icon/tel.svg" alt="Телефон" class="contacts__img">
+                  <span class="contact__text contact__text-bold">+7 (927) 793-33-33</span>
+                </ф>
+              </div>
+              <div class="contact__items">
+                <div class="contact__name">Адрес:</div>
+                <div class="contact__info">
+                  <img src="./img/icon/location.svg" alt="Локация" class="contacts__img">
+                  <span class="contact__text">г. Уфа, пр-кт Октября, д. 114/3</span>
+                </div>
+              </div>
+              <div class="contact__items">
+                <div class="contact__name">E-mail:</div>
+                <a href="mailto:e-pribor@bk.ru" class="contact__info">
+                  <img src="./img/icon/e-mail.svg" alt="Почта" class="contacts__img">
+                  <span class="contact__text">e-pribor@bk.ru</span>
+                </a>
+              </div>
+              <div class="contact__items">
+                <div class="contact__name">График работы:</div>
+                <div class="contact__info">
+                  <img src="./img/icon/time.svg" alt="Время" class="contacts__img">
+                  <span class="contact__text">Пн-Пт: с 08:00 до 19:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact__img">
+              <img src="./img/map.png" alt="Карта">
+              <div class="contact__logo">
+                <img src="./img/logo/logo.svg" alt="Логотип">
+                <span>Электронные приборы</span>
+              </div>
+              <botton class="contact__call btn">Связаться с нами</botton>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="questions__container section section__color" id="questions">
+            <div class="questions__text">
+              <h2 class="questions__title section__title">Остались вопросы? <span>Мы подскажем!</span></h2>
+              <div class="questions__subtitle section__subtitle">Оставьте заявку и наш консультант ответит на все интересующие вопросы</div>
+              <form action="#" class="questions__form">
+                <input type="text" class="questions__name" placeholder="Ваше имя">
+                <input type="text" class="questions__number" placeholder="+7 (999)-999-99-99">
+                <textarea class="questions__textarea" placeholder="Комментарий или вопрос"></textarea>
+                <button class="questions__btn btn" type="submit">оставить заявку</button>
+                <div class="questions__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</div>
+              </form>
+            </div>
+            <img src="./img/bg/woman.png" alt="" class="questions__img">
+          </div>
         </section>
       </div>
     </main>
   </div>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="./img/logo/logo.svg" alt="Логотип" class="logo__img">
+          <div class="logo__name">Электронные приборы</div>
+        </div>
+        <div class="footer__contacts">
+            <div class="contacts__items">
+              <img src="./img/icon/location.svg" alt="location" class="location__img">
+              <p class="contacts__link">г. Уфа, пр-кт Октября, д. 114/3</p>
+            </div>
+            <div class="contacts__items">
+              <img src="./img/icon/e-mail.svg" alt="e-mail" class="email__img">
+              <a href="mailto:e-pribor@bk.ru" class="contacts__link">e-pribor@bk.ru</a>
+            </div>
+            <div class="contacts__items">
+              <img src="./img/icon/tel.svg" alt="telephone" class="tel__img">
+              <a href="tel:++79277933333" class="contacts__link">+7 (927) 793-33-33</a>
+            </div>         
+        </div>
+      </div>
+        <div class="footer__link">
+          <div class="footer__item">&#169; Электронные приборы</div>
+          <a href="#" class="footer__item">Политика конфиденциальности</a>
+          <a href="" target="_blank" class="footer__item"><span>Разработано в: </span><img src="./img/logo/pandaWorks.svg" alt="PandaWorks"></a>
+        </div>
+    
+    </div>
+  </footer>
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__close"></div>
+        <div class="modal__title">Обратная связь</div>
+        <div class="modal__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
+        <form class="modal__form" action="#">
+            <input type="text" placeholder="Ваше Имя">
+            <input type="number" placeholder="+7(999)-999-99-99">
+            <input type="email" placeholder="E-mail">
+            <button class="modal__btn" type="submit">оставить заявку</button>
+            <p class="modal__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+</button>

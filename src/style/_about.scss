@@ -1,0 +1,63 @@
+.about{
+  &__container{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    gap: 113px;
+    padding-bottom: 160px;
+  }
+  &__title{
+    margin-top: -4px;
+  }
+    &__text{
+      margin-top:43px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: -0.24px;
+      max-width: 804px;
+    }
+    &__subtitle{
+      margin-top: 20px;
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p{
+        &:first-child{
+          max-width: 672px;
+        }
+        &:last-child{
+          max-width: 712px;
+        }
+      }
+    }
+    &__quantity{
+      margin-top: 116px;
+      display: flex;
+      gap: 70px;
+    }
+    &__img{
+      background: url('../img/man.png');
+      width: 443px;
+      height: 555px;
+      border-radius:15px;
+      position: relative;
+    }
+  }
+  .quantity{
+    &__items{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      span{
+        color: #1642A2;
+        font-size: 62px;
+        line-height: 60px;
+        letter-spacing: -0.62px;
+      }
+    }
+  }

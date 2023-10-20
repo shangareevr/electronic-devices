@@ -1,0 +1,55 @@
+.call{
+  &__container{
+    margin-top: 195px;
+  }
+  &__info{
+    padding-top: 75px;
+  }
+  &__subtitle{
+    margin-top: 23px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__form{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 693px;
+    align-items:center;
+    padding-bottom: 80px;
+  }
+  input{
+    width: 329px;
+    height: 55px;
+    border-radius: 10px;
+    background: #FFF;
+    padding-left: 25px;
+  }
+  ::placeholder{
+    color: rgba(10, 43, 73, 0.45);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__btn{
+    border-radius: 10px;
+    background: #C8231C;
+    width: 328px;
+    height: 57px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+  }
+  &__agreement{
+    width: 329px;
+    color: rgba(10, 43, 73, 0.45);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    
+  }
+}

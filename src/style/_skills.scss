@@ -1,0 +1,71 @@
+.skills{
+  &__container{
+    margin-top: 158px;
+    display: flex;
+    gap: 79px;
+    overflow: hidden;
+  }
+  &__info{
+    width: 300px;
+  }
+  &__subtitle{
+    max-width: 258px;
+    margin-top: 20px;
+  }
+  &__nav{
+    margin-top: 102px;
+    display: flex;
+    gap: 15px;
+  }
+}
+.slider-skills{
+  &__wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+  &__elem{
+    border-radius: 30px;
+    border: 1px dashed rgba(22, 66, 162, 0.35);
+    width: 789px;
+    height: 320px;
+    flex-shrink:0;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+  }
+  &__img{
+    border-radius: 15px;
+    width: 286px;
+    height: 290px;
+  }
+  &__text{
+    border-radius: 15px;
+    background: #F5F5F5;
+    padding: 25px;
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.24px;
+    align-items: center;
+  }
+  &__subtitle{
+    margin-top: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+  }
+}
+.slider__btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #C8231C;
+  color: #fff;
+  &:hover{
+    background-color: #B9130C;
+  }
+}
