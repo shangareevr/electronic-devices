@@ -59,6 +59,9 @@ body {
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button{
   cursor: pointer;
