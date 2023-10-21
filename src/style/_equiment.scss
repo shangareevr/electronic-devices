@@ -16,6 +16,49 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    z-index: 2;
+    &-selection{
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 462px;
+        height: 462px;
+        border: 2px dashed rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        z-index: 4;
+        top: 209px;
+        left: -356px;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 462px;
+        height: 462px;
+        border: 2px dashed rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        z-index: 4;
+        top: 241px;
+        left: 146px;
+      }
+      img{
+        position: relative;
+        z-index: 5;
+      }
+      span{
+        position: absolute;
+        display: block;
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        z-index: 4;
+        border: 2px dashed #FFF;
+        bottom: -265px;
+        left: -40px;
+      }
+    }
   }
   &__items{
     display: flex;
