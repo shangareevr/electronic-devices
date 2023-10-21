@@ -1,0 +1,38 @@
+.slider-skills .slick{
+  &-list{
+    overflow: hidden;
+  }
+  &-slider{
+    width: 1297px;
+  }
+  &-track{
+    width: 1297px;
+  }
+  &-track{
+    display: flex;
+  }
+  &-slide{
+    width: 788px !important;
+    display: flex;
+    margin: 0 7.5px;
+  }
+}
+.slider-review .slick{
+  &-list{
+    overflow: hidden;
+  }
+  &-slider{
+    width: 1374px;
+  }
+  &-track{
+    display: flex;
+  }
+  &-track{
+    display: flex;
+  }
+  &-slide{
+    width: 673px !important;
+    display: flex;
+    margin: 0 6.5px;
+  }
+}

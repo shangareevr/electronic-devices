@@ -1,12 +1,19 @@
 .call{
   &__container{
-    margin-top: 195px;
+    margin-top: 194px;
+    display: flex;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 371px;
   }
   &__info{
-    padding-top: 75px;
+    padding-top: 77px;
   }
   &__subtitle{
-    margin-top: 23px;
+    margin-top: 22px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -34,10 +41,11 @@
     line-height: 20px;
   }
   &__btn{
+    margin-top: 1px;
     border-radius: 10px;
     background: #C8231C;
-    width: 328px;
-    height: 57px;
+    width: 329px;
+    height: 54px;
     color: #FFF;
     font-size: 13px;
     line-height: 20px;

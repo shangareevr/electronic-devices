@@ -2,8 +2,6 @@ import './index.html';
 import './style.scss';
 import $ from "jquery";
 window.jQuery = $;
-// var slick = require("slick-carousel");
 require("@fancyapps/fancybox");
-// import './js/modal';
-// $(".info__btn").fancybox({
-// });
+import './js/slider.js';
+import './js/mask-number.js';

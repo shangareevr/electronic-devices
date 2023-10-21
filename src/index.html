@@ -63,8 +63,8 @@
               <h2 class="skills__title section__title">Ключевые преимущества</h2>
               <div class="skills__subtitle section__subtitle">Мы работаем с ведущими иностранными поставщиками, что позволяет нам устанавливать глобальные партнерства</div>
               <div class="skills__nav">
-                <button class="slider-skills__prev slider__btn">&#60;</button>
-                <button class="slider-skills__next slider__btn">&#62;</button>
+                <button class="slider-skills__prev slider__btn slick-prev slick-arrow">&#60;</button>
+                <button class="slider-skills__next slider__btn slick-next slick-arrow">&#62;</button>
               </div>
             </div>
             <div class="slider-skills">
@@ -189,12 +189,12 @@
               <div class="call__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
               <form class="call__form" action="#">
                 <input type="text" class="call__name" placeholder="Ваше имя">
-                <input type="number" class="call__number" placeholder="+7 (999)-999-99-99">
+                <input type="text" class="call__number" placeholder="+7 (999)-999-99-99">
                 <button class="call__btn" type="submit">оставить заявку</button>
                 <p class="call__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</p>
               </form>
             </div>
-            <!-- Вставить изображение -->
+            <img src="./img/Body.png" alt="Телефон" class="call__img">
           </div>
         </section>
         <section class="working" >
@@ -338,6 +338,22 @@
                     <div class="slider-review__date"><img src="./img/icon/calendar.svg" alt="Календарь">21.04.2022</div>
                   </div>
                 </div>
+                <div class="slider-review__elem">
+                  <img src="./img/about/first.png" alt="Экономия" class="slider-review__img">
+                  <div class="slider-review__text">
+                    <div class="slider-review__title">Петров Петр</div>
+                    <div class="slider-review__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                    <div class="slider-review__date"><img src="./img/icon/calendar.svg" alt="Календарь">21.04.2022</div>
+                  </div>
+                </div>
+                <div class="slider-review__elem">
+                  <img src="./img/about/second.png" alt="Экономия" class="slider-review__img">
+                  <div class="slider-review__text">
+                    <div class="slider-review__title">Иванов Иван</div>
+                    <div class="slider-review__subtitle">Благодаря нашим партнерским отношениям с ведущими поставщиками, мы предлагаем вам импортное оборудование по конкурентоспособным ценам, что позволяет сэкономить на закупках.</div>
+                    <div class="slider-review__date"><img src="./img/icon/calendar.svg" alt="Календарь">21.04.2022</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -445,7 +461,7 @@
         <div class="modal__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
         <form class="modal__form" action="#">
             <input type="text" placeholder="Ваше Имя">
-            <input type="number" placeholder="+7 (999)-999-99-99">
+            <input type="text" class="modal__number" placeholder="+7 (999)-999-99-99">
             <input type="email" placeholder="E-mail">
             <button class="modal__btn" type="submit">оставить заявку</button>
             <p class="modal__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</p>
