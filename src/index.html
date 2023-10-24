@@ -15,17 +15,17 @@
         </div>
         <div class="header__contacts">
           <div class="contacts__list">
-            <div class="contacts__items">
+            <div class="contacts__item">
               <img src="./img/icon/location.svg" alt="location" class="location__img">
               <p class="contacts__link">г. Уфа, пр-кт Октября, д. 114/3</p>
             </div>
-            <div class="contacts__items">
+            <div class="contacts__item">
               <img src="./img/icon/e-mail.svg" alt="e-mail" class="email__img">
               <a href="mailto:e-pribor@bk.ru" class="contacts__link">e-pribor@bk.ru</a>
             </div>
-            <div class="contacts__items">
+            <div class="contacts__item">
               <img src="./img/icon/tel.svg" alt="telephone" class="tel__img">
-              <a href="tel:+79277933333" class="contacts__link">+7 (927) 793-33-33</a>
+              <a href="tel:+79277933333" class="contacts__link contacts__link-bold">+7 (927) 793-33-33</a>
             </div>
           </div>          
         </div>
@@ -44,6 +44,11 @@
               </div>
             </div>
             <nav class="main__nav">
+            <div class="nav__menu-burger">
+                <span class="nav__icon"></span>
+                <span class="menu-status">Меню</span>
+            </div>
+            <div class="menu__wrapper">
               <ul class="nav__list">
                 <li class="nav__items"><a href="#about" class="nav__link">О компании</a></li>
                 <li class="nav__items"><a href="#skills" class="nav__link">Преимущества</a></li>
@@ -53,6 +58,21 @@
                 <li class="nav__items"><a href="#review" class="nav__link">Кейсы</a></li>
                 <li class="nav__items"><a href="#contact" class="nav__link">Контакты</a></li>
               </ul>
+              <div class="nav__contacts">
+                <div class="contacts__items">
+                  <img src="./img/icon/tel.svg" alt="telephone" class="tel__img">
+                  <a href="tel:++79277933333" class="contacts__link contacts__link-bold">+7 (927) 793-33-33</a>
+                </div> 
+                <div class="contacts__items">
+                  <img src="./img/icon/location.svg" alt="location" class="location__img">
+                  <p class="contacts__link">г. Уфа, пр-кт Октября, д. 114/3</p>
+                </div>
+                <div class="contacts__items">
+                  <img src="./img/icon/e-mail.svg" alt="e-mail" class="email__img">
+                  <a href="mailto:e-pribor@bk.ru" class="contacts__link">e-pribor@bk.ru</a>
+                </div>
+              </div>       
+            </div>
               <button data-fancybox href="#modal" class="nav__btn btn">Заказать звонок</button>
             </nav>
           </div>
@@ -63,8 +83,8 @@
               <h2 class="skills__title section__title">Ключевые преимущества</h2>
               <div class="skills__subtitle section__subtitle">Мы работаем с ведущими иностранными поставщиками, что позволяет нам устанавливать глобальные партнерства</div>
               <div class="skills__nav">
-                <button class="slider-skills__prev slider__btn slick-prev slick-arrow">&#60;</button>
-                <button class="slider-skills__next slider__btn slick-next slick-arrow">&#62;</button>
+                <button class="slider-skills__prev slider__btn">&#60;</button>
+                <button class="slider-skills__next slider__btn">&#62;</button>
               </div>
             </div>
             <div class="slider-skills">
@@ -181,6 +201,11 @@
                   <span></span>
               </div>
             </div>
+            <div class="equipment__items equipment__list-selection equipment__list-selection-out">
+              <div class="selection__title">Подберем любое оборудование <br> по вашему запросу</div>
+              <img src="./img/equipment/img_15.png" alt="" class="selection__img">
+              <span></span>
+          </div>
           </div>
         </section>
         <section class="call">
@@ -242,7 +267,7 @@
             <h2 class="brends__title section__title">Бренды с которыми мы работаем</h2>
             <div class="tabs__wrapper">
               <div class="tabs">
-                <span class="tab active">Америка</span>
+                <span class="tab">Америка</span>
                 <span class="tab">Япония</span>
                 <span class="tab">швейцария</span>
                 <span class="tab">канада</span>
@@ -287,6 +312,21 @@
                   <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
 
                 </div>
+                <div class="tab-items">
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                </div>
+                <div class="tab-items">
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                </div>
+                <div class="tab-items">
+                  <div class="tab-item"><img src="./img/tab/image_01.png" class="tab__img"></div>
+                </div>
+                <div class="tab-items"></div>
+                <div class="tab-items"></div>
+                <div class="tab-items"></div>
+                <div class="tab-items"></div>
+                <div class="tab-items"></div>
+                <div class="tab-items"></div>
               </div>
               <button class="tab__open btn">смотреть все</button>
             </div>
@@ -295,7 +335,7 @@
         <section class="about">
           <div class="about__container section section__color" id="about">
             <div class="about__content">
-              <h2 class="about__title section__title">О компании «Электронные приборы»</h2>
+              <h2 class="about__title section__title">О компании <br> «Электронные приборы»</h2>
               <div class="about__text">Постоянно исследуем новейшие технологии и инновации, чтобы оставаться на передовом рубеже. Мы предлагаем нашим клиентам гибкие и индивидуальные решения, отвечающие их потребностям.</div>
               <div class="about__subtitle section__subtitle">
                 <p>С другой стороны постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
@@ -309,7 +349,9 @@
               </div>
             </div>
             <div class="about__img">
+              <img src="./img/man.png" class="">
             </div>
+            </img>
           </div>
         </section>
         <section class="review">
@@ -366,39 +408,34 @@
               <div class="contact__items">
                 <div class="contact__name">Телефон:</div>
                 <a href="tel:+79277933333" class="contact__info">
-                  <img src="./img/icon/tel.svg" alt="Телефон" class="contacts__img">
+                  <img src="./img/icon/tel.svg" alt="Телефон" class="contact__img">
                   <span class="contact__text contact__text-bold">+7 (927) 793-33-33</span>
-                </ф>
+                </a>
               </div>
               <div class="contact__items">
                 <div class="contact__name">Адрес:</div>
                 <div class="contact__info">
-                  <img src="./img/icon/location.svg" alt="Локация" class="contacts__img">
+                  <img src="./img/icon/location.svg" alt="Локация" class="contact__img">
                   <span class="contact__text">г. Уфа, пр-кт Октября, д. 114/3</span>
                 </div>
               </div>
               <div class="contact__items">
                 <div class="contact__name">E-mail:</div>
                 <a href="mailto:e-pribor@bk.ru" class="contact__info">
-                  <img src="./img/icon/e-mail.svg" alt="Почта" class="contacts__img">
+                  <img src="./img/icon/e-mail.svg" alt="Почта" class="contact__img">
                   <span class="contact__text">e-pribor@bk.ru</span>
                 </a>
               </div>
               <div class="contact__items">
-                <div class="contact__name">График работы:</div>
+                <div class="contact__name">Режим работы:</div>
                 <div class="contact__info">
-                  <img src="./img/icon/time.svg" alt="Время" class="contacts__img">
+                  <img src="./img/icon/time.svg" alt="Время" class="contact__img">
                   <span class="contact__text">Пн-Пт: с 08:00 до 19:00</span>
                 </div>
               </div>
             </div>
-            <div class="contact__img">
-              <img src="./img/map.png" alt="Карта">
-              <div class="contact__logo">
-                <img src="./img/logo/logo.svg" alt="Логотип">
-                <span>Электронные приборы</span>
-              </div>
-              <button class="contact__call btn" data-fancybox href="#modal">Связаться с нами</button>
+            <div class="contact__map" id="map">
+              <button data-fancybox href="#modal" class="contact__btn btn">связаться с нами</button>
             </div>
           </div>
         </section>
@@ -412,7 +449,7 @@
                 <input type="text" class="questions__number" placeholder="+7 (999)-999-99-99">
                 <textarea class="questions__textarea" placeholder="Комментарий или вопрос"></textarea>
                 <button class="questions__btn btn" type="submit">оставить заявку</button>
-                <div class="questions__agreement">Нажимая кноку «Оставить заявку», вы соглашаетесь с политикой конфиденциальности</div>
+                <div class="questions__agreement">Нажимая кноку «Оставить заявку», вы  соглашаетесь с политикой конфиденциальности</div>
               </form>
             </div>
             <img src="./img/bg/woman.png" alt="" class="questions__img">
@@ -439,14 +476,14 @@
             </div>
             <div class="contacts__items">
               <img src="./img/icon/tel.svg" alt="telephone" class="tel__img">
-              <a href="tel:++79277933333" class="contacts__link">+7 (927) 793-33-33</a>
+              <a href="tel:++79277933333" class="contacts__link contacts__link-bold">+7 (927) 793-33-33</a>
             </div>         
         </div>
       </div>
         <div class="footer__link">
           <div class="footer__item">&#169; Электронные приборы</div>
           <a href="#" class="footer__item">Политика конфиденциальности</a>
-          <a href="" target="_blank" class="footer__item"><span>Разработано в: </span><img src="./img/logo/pandaWorks.svg" alt="PandaWorks"></a>
+          <a href="https://pandaworks.ru/" target="_blank" class="footer__item"><span>Разработано в: </span><img src="./img/logo/pandaWorks.svg" alt="PandaWorks"></a>
         </div>
     
     </div>
@@ -458,8 +495,8 @@
           <span></span>
           <span></span>
         </div>
-        <div class="modal__title">Обратная связь</div>
-        <div class="modal__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
+        <div class="modal__title section__title">Обратная связь</div>
+        <div class="modal__subtitle section__subtitle">Оставьте заявку и наш специалист перезвонит в ближайшее время для консультации</div>
         <form class="modal__form" action="#">
             <input type="text" placeholder="Ваше Имя">
             <input type="text" class="modal__number" placeholder="+7 (999)-999-99-99">

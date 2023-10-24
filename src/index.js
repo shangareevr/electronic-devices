@@ -5,3 +5,7 @@ window.jQuery = $;
 require("@fancyapps/fancybox");
 import './js/slider.js';
 import './js/mask-number.js';
+import './js/map.js';
+import './img/map.svg';
+import './js/tabs.js';
+import './js/burger-menu.js';

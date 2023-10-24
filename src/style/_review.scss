@@ -2,6 +2,10 @@
 .review{
   &__container{
     padding-top: 155px;
+    @media(max-width:500px){
+      padding-right: 0;
+      padding-top: 80px;
+    }
   }
   &__top{
     max-width: 1360px;
@@ -23,6 +27,9 @@
     flex-wrap: nowrap;
     gap: 15px;
     margin-top: 39.5px;
+    @media(max-width:1200px){
+      margin-top: 32px;
+    }
   }
   &__elem{
     border-radius: 30px;
@@ -33,41 +40,92 @@
     padding: 15px 32px 15px 15px !important;
     display: flex !important;
     gap: 25px;
+    @media(max-width:1500px){
+      padding: 8px !important;
+      gap: 20px;
+    }
+    @media(max-width:1450px){
+      width: 600px !important;
+      align-items: center;
+    }
+    @media(max-width:1350px){
+      width: 500px !important;
+    }
+    @media(max-width:1100px){
+      width: 450px !important;
+    }
+    @media(max-width:1000px){
+      width: 310px !important;
+      flex-direction: column;
+      height: 485px;
+      border-radius: 20px;
+    }
   }
   &__img{
     width: 199px;
     height: 265px;
     border: 20px solid #F5F5F5;
     border-radius: 20px;
+    @media(max-width:1000px){
+      width: 294px;
+      height: 258px;
+      border-top: 17px solid #F5F5F5;
+      border-bottom: 17px solid #F5F5F5;
+      border-right: 68px solid #F5F5F5;
+      border-left: 68px solid #F5F5F5;
+      border-radius: 12px;
+    }
   }
   &__text{
-    border-radius: 15px;
     padding-top: 28px;
+    @media(max-width:1000px){
+      padding-top: 0px;
+      padding-left: 12px;
+    }
   }
   &__title{
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -0.24px;
     align-items: center;
     font-size: 16px;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
     text-transform: uppercase;
+    @media(max-width:1000px){
+      font-size: 14px;
+    }
   }
   &__subtitle{
     margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
+    @media(max-width:1000px){
+      font-size: 14px;
+      margin-top: 5px;
+    }
   }
   &__date{
     margin-top: 76px;
     display: flex;
     gap: 10px;
+    align-items: center;
+    color: rgba(10, 43, 73, 0.45);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
     img{
       width: 20px;
       height: 20px;
+      @media(max-width: 1000px){
+        width: 16px;
+        height: 16px;
+      }
+    }
+    @media(max-width:1350px){
+      margin-top: 15px;
+    }
+    @media(max-width:1000px){
+      font-size: 14px;
     }
   }
 }

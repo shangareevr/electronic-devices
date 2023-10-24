@@ -47,7 +47,8 @@
   "dependencies": {
     "autoprefixer": "10.4.5",
     "normalize.css": "^8.0.1",
-    "underscore": "^1.13.6"
+    "underscore": "^1.13.6",
+    "ymaps": "^0.2.1"
   },
   "overrides": {
     "autoprefixer": "10.4.5"

@@ -7,6 +7,7 @@ const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 var $ = require("jquery");
+
 module.exports = {
 	mode,
 	target,

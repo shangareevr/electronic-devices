@@ -4,15 +4,23 @@
   }
   &-slider{
     width: 1297px;
-  }
-  &-track{
-    width: 1297px;
+    @media(max-width:1200px){
+      width: 900px;
+    }
+    @media(max-width:1100px){
+      width: 100%;
+    }
+    @media(max-width:900px){
+      width: 100%;
+    }
+    // @media(max-width:450px){
+    //   width: 350px;
+    // }
   }
   &-track{
     display: flex;
   }
   &-slide{
-    width: 788px !important;
     display: flex;
     margin: 0 7.5px;
   }
@@ -22,17 +30,99 @@
     overflow: hidden;
   }
   &-slider{
-    width: 1374px;
+    max-width: 1365px;
+    @media(max-width:1450px){
+      width: 1230px;
+    }
+    @media(max-width:1350px){
+      width: 1020px !important;
+    }
+    @media(max-width:1100px){
+      width: 925px !important;
+    }
+    @media(max-width:1000px){
+      width: 670px !important;
+    }
+    @media(max-width:700px){
+      width: 100% !important;
+    }
   }
   &-track{
     display: flex;
-  }
-  &-track{
-    display: flex;
+    gap: 15px;
+    @media(max-width:1450px){
+      width: auto;
+    }
   }
   &-slide{
     width: 673px !important;
     display: flex;
-    margin: 0 6.5px;
+    @media(max-width:1450px){
+      width: 600px !important;
+    }
+    @media(max-width:1350px){
+      width: 500px !important;
+    }
+    @media(max-width:1100px){
+      width: 460px !important;
+    }
+    @media(max-width:1000px){
+      width: 325px !important;
+    }
+  }
+}
+.slider{
+  &__btn{
+    @media(max-width:700px){
+      display: none !important;
+    }
+  }
+}
+
+.equipment__list .slick{
+  &-list{
+    overflow: hidden;
+  }
+  &-track{
+    width: 100% !important;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+}
+.tabs .slick{
+  &-slider{
+    width: 100% !important;
+  }
+  &-list{
+    overflow: hidden;
+    z-index: 1 !important;
+    padding-bottom: 22px;
+    @media(max-width:500px){
+      padding-bottom: 11px;
+    }
+  }
+  &-track{
+    width: 100% !important;
+    display: flex;
+    gap: 55px;
+    flex-wrap: nowrap;
+    @media(max-width:500px){
+      gap: 40px;
+    }
+  }
+  &-slide{
+    .active{
+      position: relative;
+      &:before{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+      }
+    }
+    
   }
 }
