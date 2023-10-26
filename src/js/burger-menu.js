@@ -1,6 +1,7 @@
 function showMenu () {
   const burger = document.querySelector(".nav__menu-burger");
   burger.addEventListener("click", toggleClass);
+
 }
 showMenu();
 
@@ -11,6 +12,12 @@ function toggleClass () {
   menu.classList.toggle("open");
   document.querySelector('.nav__icon').classList.toggle('transform');
   document.querySelector('.wrapper').classList.toggle("scroll");
+  let text =   document.querySelector('.menu-status');
+  if(text.innerText === 'Меню'){
+    text.innerText = "Закрыть"
+  } else{
+    text.innerText = 'Меню'
+  }
   }
 
 function hideMenu () {

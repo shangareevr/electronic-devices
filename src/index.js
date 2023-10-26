@@ -9,3 +9,4 @@ import './js/map.js';
 import './img/map.svg';
 import './js/tabs.js';
 import './js/burger-menu.js';
+import './js/border-animatiom.js';

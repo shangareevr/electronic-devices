@@ -66,3 +66,21 @@ body {
 button{
   cursor: pointer;
 }
+.animation-border{
+  border-radius: 30px;
+  border: 1px dashed transparent;
+  animation-name: btnBorder;
+  animation-duration: 1s;
+  animation-fill-mode:both;
+  @media(max-width:900px){
+    border-radius: 20px;
+  }
+}
+
+@keyframes btnBorder {
+  0%{border: 1px dashed transparent;}
+  100%{border: 1px dashed rgba(22, 66, 162, 0.45);}
+}
+.green{
+  background-color: red;
+}

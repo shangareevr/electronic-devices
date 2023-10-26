@@ -117,16 +117,20 @@
         font-size: 14px;
         gap: 5px;
       }
-      span{
-        color: #1642A2;
-        font-size: 62px;
-        line-height: 60px;
-        letter-spacing: -0.62px;
-        @media(max-width:1000px){
-          font-size: 42px;
-          line-height: 40px;
-          letter-spacing: -0.42px;
-        }
-      }
     }
   }
+.animated-number{
+    color: #1642A2;
+    font-size: 62px;
+    line-height: 60px;
+    letter-spacing: -0.62px;
+    opacity: 0;
+    @media(max-width:1000px){
+      font-size: 42px;
+      line-height: 40px;
+      letter-spacing: -0.42px;
+    }
+}
+.animated-text{
+  opacity: 0;
+}

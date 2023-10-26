@@ -2,12 +2,17 @@ import './slick.js';
 $('.slider-skills__wrapper').slick({
   prevArrow: $('.slider-skills__prev'),
   nextArrow: $('.slider-skills__next'),
-  'fade	':true, // затухание
+  infinite: true,
   respondTo: 'min',
   variableWidth:true,
   speed: 500,
+  sliderScroll:1,
+  useTransform:true,
 });
 
+$('.slider-skills__wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  console.log(nextSlide);
+});
 $('.slider-review__wrapper').slick({
   prevArrow: $('.review__prev'),
   nextArrow: $('.review__next'),
