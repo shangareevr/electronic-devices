@@ -1,4 +1,5 @@
 import ymaps from 'ymaps';
+
 ymaps.load('https://api-maps.yandex.ru/2.1/?&lang=ru_RU').then(maps => {
 let map = new maps.Map('map', {
     center: [54.76934656990863,56.02607349999988],
