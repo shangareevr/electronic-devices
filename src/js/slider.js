@@ -1,18 +1,20 @@
-import './slick.js';
-$('.slider-skills__wrapper').slick({
-  prevArrow: $('.slider-skills__prev'),
-  nextArrow: $('.slider-skills__next'),
-  infinite: true,
-  respondTo: 'min',
-  variableWidth:true,
-  speed: 500,
-  sliderScroll:1,
-  useTransform:true,
-});
+var $ = jQuery.noConflict();
 
-$('.slider-skills__wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+document.addEventListener('DOMContentLoaded',()=>{
+  $('.slider-skills__wrapper').slick({
+    prevArrow: $('.slider-skills__prev'),
+    nextArrow: $('.slider-skills__next'),
+    infinite: true,
+    respondTo: 'min',
+    variableWidth:true,
+    speed: 500,
+    sliderScroll:1,
+    useTransform:true,
+  }); 
+  $('.slider-skills__wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   console.log(nextSlide);
 });
+
 $('.slider-review__wrapper').slick({
   prevArrow: $('.review__prev'),
   nextArrow: $('.review__next'),
@@ -38,23 +40,12 @@ $('.equipment__list').slick({
     settings: 'unslick'
   }]
 });
-
-
-
-
-
-
 $('.tabs').slick({
   arrows: false,
   infinite: false,
   slidesToScroll: 1,
   variableWidth: true,
-  // mobileFirst: true,
   variableWidth: true,
-  // responsive: [{
-  //   breakpoint: 1100,
-  //   settings: 'unslick',
-  // }]
 });
 
 $('.tab-items').not(':first').hide();
@@ -64,7 +55,7 @@ $('.tabs__wrapper .slick-slide').click(function(){
   console.log($('.tabs__wrapper .slick-slide'))
 }).eq(0).addClass('active');
 
-
 $('.tab__open').click(function(){
   $('.tabs__content').addClass('hide');
 });
+})

@@ -1,4 +1,5 @@
-$(document).ready(function() {
+var $ = jQuery.noConflict();
+document.addEventListener('DOMContentLoaded',()=>{
 	var windowHeight = $(window).height();
  
 	$(document).on('scroll', function() {
@@ -10,9 +11,8 @@ $(document).ready(function() {
 			}
 		});
 	});
-});
 
-$(document).ready(function() {
+
 	var windowHeight = $(window).height();
  
 	$(document).on('scroll', function() {
@@ -24,9 +24,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-});
 
-$(document).ready(function() {
 	var windowHeight = $(window).height();
  
 	$(document).on('scroll', function() {
@@ -38,8 +36,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-});
-$(document).ready(function() {
+
 	var windowHeight = $(window).height();
 	$(document).on('scroll', function() {
 		$('.circle-out').each(function() {
@@ -50,9 +47,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-});
 
-$(document).ready(function() {
 	var windowHeight = $(window).height();
 	$(document).on('scroll', function() {
 		$('.animated-number').each(function() {
@@ -63,9 +58,10 @@ $(document).ready(function() {
         $('.animated-text').each(function() {
           var el = $(this);
             el.addClass('show');
-
         });
 			}
 		});
 	});
-});
+})
+
+

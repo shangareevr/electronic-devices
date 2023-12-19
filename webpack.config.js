@@ -6,7 +6,6 @@ const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
-var $ = require("jquery");
 
 module.exports = {
 	mode,
@@ -17,10 +16,13 @@ module.exports = {
 		hot: true,
 	},
 	entry: path.resolve(__dirname, 'src', 'index.js'),
+	optimization: {
+		minimize: false
+},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		clean: true,
-		filename: '[name].[contenthash].js',
+		filename: '[name].js',
 		assetModuleFilename: 'assets/[name][ext]',
 	},
 	plugins: [
@@ -28,13 +30,13 @@ module.exports = {
 			template: path.resolve(__dirname, 'src', 'index.html'),
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].[contenthash].css',
+			filename: '[name].css',
 		}),
-		new webpack.ProvidePlugin({
-			identifier: path.resolve(path.join(__dirname, 'src/module1')),
-			$: 'jquery',
- 		  jQuery: 'jquery',
-		}),
+		// new webpack.ProvidePlugin({
+		// 	identifier: path.resolve(path.join(__dirname, 'src/module1')),
+		// 	$: 'jquery',
+ 		//   jQuery: 'jquery',
+		// }),
 	],
 	module: {
 		rules: [
@@ -113,13 +115,13 @@ module.exports = {
 					},
 				},
 			},
-			{
-        test: require.resolve("jquery"),
-        loader: "expose-loader",
-        options: {
-          exposes: ["$", "jQuery"],
-        },
-      },
+			// {
+      //   test: require.resolve("jquery"),
+      //   loader: "expose-loader",
+      //   options: {
+      //     exposes: ["$", "jQuery"],
+      //   },
+      // },
       {
         test: require.resolve("underscore"),
         loader: "expose-loader",
